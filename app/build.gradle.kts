@@ -85,9 +85,6 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.9.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.9.2")
 
-    // Security
-    implementation("androidx.security:security-crypto:1.1.0")
-
     // Networking
     implementation("com.squareup.okhttp3:okhttp:5.3.2")
     implementation("com.squareup.okhttp3:logging-interceptor:5.3.2")

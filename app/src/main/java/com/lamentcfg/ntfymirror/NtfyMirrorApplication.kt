@@ -2,8 +2,6 @@ package com.lamentcfg.ntfymirror
 
 import android.app.Application
 import android.content.Context
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.MasterKey
 import com.lamentcfg.ntfymirror.data.ChannelDiscoveryManager
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -14,23 +12,6 @@ import java.util.concurrent.TimeUnit
  * Provides access to shared dependencies throughout the app.
  */
 class NtfyMirrorApplication : Application() {
-
-    // Lazy-initialized dependencies
-    private val masterKey: MasterKey by lazy {
-        MasterKey.Builder(this)
-            .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-            .build()
-    }
-
-    private val encryptedSharedPreferences by lazy {
-        EncryptedSharedPreferences.create(
-            this,
-            SECURE_PREFS_NAME,
-            masterKey,
-            EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-            EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-        )
-    }
 
     private val okHttpClient: OkHttpClient by lazy {
         val builder = OkHttpClient.Builder()
@@ -62,8 +43,6 @@ class NtfyMirrorApplication : Application() {
      * Service locator providing access to app-wide dependencies.
      */
     object ServiceLocator {
-        fun getEncryptedSharedPreferences() = _instance.encryptedSharedPreferences
-
         fun getOkHttpClient() = _instance.okHttpClient
 
         fun getContext(): Context = _instance.applicationContext
@@ -72,7 +51,6 @@ class NtfyMirrorApplication : Application() {
     companion object {
         private lateinit var _instance: NtfyMirrorApplication
 
-        private const val SECURE_PREFS_NAME = "ntfy_mirror_secure_prefs"
         private const val CONNECT_TIMEOUT_SECONDS = 15L
         private const val READ_TIMEOUT_SECONDS = 30L
         private const val WRITE_TIMEOUT_SECONDS = 30L

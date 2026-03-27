@@ -1,8 +1,6 @@
 package com.lamentcfg.ntfymirror.data
 
 import android.content.Context
-import androidx.security.crypto.EncryptedSharedPreferences
-import androidx.security.crypto.MasterKey
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import org.junit.After
@@ -12,35 +10,19 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Integration tests for SecureStorage using actual EncryptedSharedPreferences.
+ * Integration tests for SecureStorage using Android Keystore + AES/GCM encryption.
  * These tests run on a device/emulator to verify real encryption/decryption behavior.
  */
 @RunWith(AndroidJUnit4::class)
 class SecureStorageIntegrationTest {
 
     private lateinit var context: Context
-    private lateinit var masterKey: MasterKey
-    private lateinit var encryptedPrefs: android.content.SharedPreferences
     private lateinit var secureStorage: SecureStorage
 
     @Before
     fun setUp() {
         context = ApplicationProvider.getApplicationContext()
-
-        masterKey = MasterKey.Builder(context)
-            .setKeyScheme(MasterKey.KeyScheme.AES256_GCM)
-            .build()
-
-        // Use a separate prefs file for testing to avoid affecting production data
-        encryptedPrefs = EncryptedSharedPreferences.create(
-            context,
-            TEST_PREFS_NAME,
-            masterKey,
-            EncryptedSharedPreferences.PrefKeyEncryptionScheme.AES256_SIV,
-            EncryptedSharedPreferences.PrefValueEncryptionScheme.AES256_GCM
-        )
-
-        secureStorage = SecureStorage(encryptedPrefs)
+        secureStorage = SecureStorage(context)
 
         // Clear any existing test data
         secureStorage.clearAll()
@@ -103,7 +85,7 @@ class SecureStorageIntegrationTest {
 
     @Test
     fun putString_storesUnicodeCharacters() {
-        val unicodeValue = "日本語 中文 한글 العربية 🎉🚀"
+        val unicodeValue = "\u65e5\u672c\u8a9e \u4e2d\u6587 \ud55c\uae00 \u0627\u0644\u0639\u0631\u0628\u064a\u0629 \ud83c\udf89\ud83d\ude80"
 
         secureStorage.putString("unicode_key", unicodeValue)
         secureStorage.commit()
@@ -397,8 +379,8 @@ class SecureStorageIntegrationTest {
         secureStorage.putInt("persist_int", 42)
         secureStorage.commit()
 
-        // Create a new SecureStorage instance with the same encrypted prefs
-        val newStorageInstance = SecureStorage(encryptedPrefs)
+        // Create a new SecureStorage instance with the same context
+        val newStorageInstance = SecureStorage(context)
 
         assertEquals("persist_value", newStorageInstance.getString("persist_key"))
         assertEquals(42, newStorageInstance.getInt("persist_int"))
@@ -473,9 +455,5 @@ class SecureStorageIntegrationTest {
         }
 
         assertEquals(iterations - 1, secureStorage.getInt("counter"))
-    }
-
-    companion object {
-        private const val TEST_PREFS_NAME = "ntfy_mirror_test_prefs"
     }
 }
