@@ -36,24 +36,6 @@ jobs:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: ./gradlew assembleRelease
 
-      - name: Sign APK
-        env:
-          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-        run: |
-          APK_PATH="app/build/outputs/apk/release/app-release-unsigned.apk"
-          SIGNED_APK="app/build/outputs/apk/release/app-release.apk"
-
-          # Sign the APK using apksigner
-          $ANDROID_HOME/build-tools/$(ls $ANDROID_HOME/build-tools | tail -1)/apksigner sign \
-            --ks keystore.jks \
-            --ks-pass env:KEYSTORE_PASSWORD \
-            --ks-key-alias $KEY_ALIAS \
-            --key-pass env:KEY_PASSWORD \
-            --out $SIGNED_APK \
-            $APK_PATH
-
       - name: Rename APK with version
         run: |
           VERSION_NAME=$(grep "versionName" app/build.gradle.kts | sed 's/.*versionName = "\([^"]*\)".*/\1/')
