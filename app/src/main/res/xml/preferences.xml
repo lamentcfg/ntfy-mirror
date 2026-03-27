@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SwitchPreferenceCompat
+        android:key="forwarding_enabled"
+        android:title="@string/pref_forwarding_enabled_title"
+        android:summary="@string/pref_forwarding_enabled_summary"
+        android:defaultValue="true" />
+
+    <SwitchPreferenceCompat
+        android:key="forward_ongoing"
+        android:title="@string/pref_forward_ongoing_title"
+        android:summary="@string/pref_forward_ongoing_summary"
+        android:defaultValue="false" />
+
+    <SwitchPreferenceCompat
+        android:key="include_body"
+        android:title="@string/pref_include_body_title"
+        android:summary="@string/pref_include_body_summary"
+        android:defaultValue="true" />
+
+    <Preference
+        android:key="battery_optimization"
+        android:title="@string/pref_battery_optimization_title"
+        android:summary="@string/pref_battery_optimization_summary" />
+
+    <PreferenceCategory
+        android:title="@string/pref_about_category"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:key="app_version"
+            android:title="@string/pref_version_title"
+            android:selectable="false" />
+
+        <Preference
+            android:key="donate"
+            android:title="@string/pref_donate_title"
+            android:summary="@string/pref_donate_summary" />
+
+        <Preference
+            android:key="source_code"
+            android:title="@string/pref_source_code_title"
+            android:summary="@string/pref_source_code_summary" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

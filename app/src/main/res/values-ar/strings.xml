@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نسخة Ntfy</string>
+    <string name="server_settings">الخادم</string>
+    <string name="server_url">رابط الخادم</string>
+    <string name="topic">الموضوع</string>
+    <string name="optional_credentials">بيانات الاعتماد</string>
+    <string name="username">اسم المستخدم (اختياري)</string>
+    <string name="password">كلمة المرور (اختيارية)</string>
+    <string name="test_connection">اختبار الاتصال</string>
+    <string name="save">حفظ</string>
+    <string name="settings_saved">تم حفظ الإعدادات</string>
+    <string name="connection_successful">تم الاتصال بنجاح</string>
+    <string name="connection_failed">فشل الاتصال: %s</string>
+    <string name="topic_required">الموضوع مطلوب</string>
+    <string name="server_url_required">رابط الخادم مطلوب</string>
+    <string name="invalid_url">تنسيق الرابط غير صالح</string>
+
+    <!-- App List -->
+    <string name="app_list">التطبيقات</string>
+    <string name="app_icon">أيقونة التطبيق</string>
+    <string name="apps_tab">التطبيقات</string>
+    <string name="system_tab">النظام</string>
+    <string name="no_apps_found">لم يتم العثور على تطبيقات</string>
+    <string name="no_system_apps_found">لم يتم العثور على تطبيقات نظام</string>
+    <string name="expand_collapse">توسيع أو طي</string>
+    <string name="no_channels">لم يتم اكتشاف قنوات</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d قناة</item>
+        <item quantity="other">%1$d قناة</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">القنوات</string>
+    <string name="no_channels_for_app">لم يتم اكتشاف قنوات بعد.\n\nستظهر القنوات هنا عندما يرسل هذا التطبيق إشعارات.</string>
+    <string name="select_all">تحديد الكل</string>
+    <string name="deselect_all">إلغاء تحديد الكل</string>
+
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="pref_forwarding_enabled_title">تفعيل التوجيه</string>
+    <string name="pref_forwarding_enabled_summary">توجيه الإشعارات إلى خادم ntfy</string>
+    <string name="pref_forward_ongoing_title">توجيه الإشعارات المستمرة</string>
+    <string name="pref_forward_ongoing_summary">تضمين الإشعارات المستمرة/الدائمة (مثل مشغلات الموسيقى، التنزيلات)</string>
+    <string name="pref_include_body_title">تضمين نص الإشعار</string>
+    <string name="pref_include_body_summary">تضمين النص الكامل للإشعار في الرسائل الموجهة</string>
+    <string name="pref_about_category">حول</string>
+    <string name="pref_version_title">الإصدار</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">تبرع</string>
+    <string name="pref_donate_summary">ادعم تطوير Ntfy Mirror</string>
+    <string name="pref_source_code_title">الكود المصدري</string>
+    <string name="pref_source_code_summary">اعرض الكود المصدري على GitHub</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">تفعيل الوصول للإشعارات</string>
+    <string name="notification_permission_description">يحتاج Ntfy Mirror إلى إذن لقراءة إشعاراتك حتى يتمكن من توجيهها إلى خادم ntfy الخاص بك.</string>
+    <string name="notification_permission_instruction">اضغط على الزر أدناه، ثم ابحث عن \"Ntfy Mirror\" في القائمة وفعّله.</string>
+    <string name="notification_permission_icon">أيقونة إذن الإشعارات</string>
+    <string name="open_notification_settings">فتح إعدادات الإشعارات</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">تحسين البطارية</string>
+    <string name="pref_battery_optimization_summary">تعطيل تحسين البطارية لضمان توجيه موثوق للإشعارات</string>
+    <string name="pref_battery_optimization_disabled">تم تعطيل تحسين البطارية</string>
+    <string name="pref_battery_optimization_enabled">اضغط لتعطيل تحسين البطارية</string>
+    <string name="battery_optimization_title">تعطيل تحسين البطارية</string>
+    <string name="battery_optimization_description">للتوجيه الموثوق للإشعارات، نوصي بتعطيل تحسين البطارية لـ Ntfy Mirror. هذا يمنع النظام من إغلاق التطبيق في الخلفية.</string>
+    <string name="battery_optimization_icon">أيقونة تحسين البطارية</string>
+    <string name="open_battery_settings">تعطيل تحسين البطارية</string>
+    <string name="skip">تخطي</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">المحتوى مخفي</string>
+</resources>

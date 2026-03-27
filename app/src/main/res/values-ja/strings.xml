@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy レプリカ</string>
+    <string name="server_settings">サーバー</string>
+    <string name="server_url">サーバーURL</string>
+    <string name="topic">トピック</string>
+    <string name="optional_credentials">認証情報</string>
+    <string name="username">ユーザー名（オプション）</string>
+    <string name="password">パスワード（オプション）</string>
+    <string name="test_connection">接続テスト</string>
+    <string name="save">保存</string>
+    <string name="settings_saved">設定を保存しました</string>
+    <string name="connection_successful">接続に成功しました</string>
+    <string name="connection_failed">接続に失敗しました: %s</string>
+    <string name="topic_required">トピックは必須です</string>
+    <string name="server_url_required">サーバーURLは必須です</string>
+    <string name="invalid_url">無効なURL形式です</string>
+
+    <!-- App List -->
+    <string name="app_list">アプリ</string>
+    <string name="app_icon">アプリアイコン</string>
+    <string name="apps_tab">アプリ</string>
+    <string name="system_tab">システム</string>
+    <string name="no_apps_found">アプリが見つかりません</string>
+    <string name="no_system_apps_found">システムアプリが見つかりません</string>
+    <string name="expand_collapse">展開または折りたたみ</string>
+    <string name="no_channels">チャンネルが見つかりません</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d チャンネル</item>
+        <item quantity="other">%1$d チャンネル</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">チャンネル</string>
+    <string name="no_channels_for_app">まだチャンネルが見つかりません。\n\nこのアプリが通知を送信すると、チャンネルがここに表示されます。</string>
+    <string name="select_all">すべて選択</string>
+    <string name="deselect_all">すべて解除</string>
+
+    <!-- Settings -->
+    <string name="settings">設定</string>
+    <string name="pref_forwarding_enabled_title">転送を有効にする</string>
+    <string name="pref_forwarding_enabled_summary">通知をntfyサーバーに転送する</string>
+    <string name="pref_forward_ongoing_title">継続中の通知を転送</string>
+    <string name="pref_forward_ongoing_summary">永続的/継続中の通知を含める（例：音楽プレーヤー、ダウンロード）</string>
+    <string name="pref_include_body_title">通知本文を含める</string>
+    <string name="pref_include_body_summary">転送メッセージに通知テキスト全体を含める</string>
+    <string name="pref_about_category">このアプリについて</string>
+    <string name="pref_version_title">バージョン</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">寄付</string>
+    <string name="pref_donate_summary">Ntfy Mirrorの開発を支援する</string>
+    <string name="pref_source_code_title">ソースコード</string>
+    <string name="pref_source_code_summary">GitHubでソースコードを表示</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">通知アクセスを有効にする</string>
+    <string name="notification_permission_description">Ntfy Mirrorが通知をntfyサーバーに転送するには、通知を読み取る権限が必要です。</string>
+    <string name="notification_permission_instruction">下のボタンをタップし、リストから「Ntfy Mirror」を見つけて有効にしてください。</string>
+    <string name="notification_permission_icon">通知権限アイコン</string>
+    <string name="open_notification_settings">通知設定を開く</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">バッテリー最適化</string>
+    <string name="pref_battery_optimization_summary">確実に通知を転送するためにバッテリー最適化を無効にする</string>
+    <string name="pref_battery_optimization_disabled">バッテリー最適化は無効です</string>
+    <string name="pref_battery_optimization_enabled">タップしてバッテリー最適化を無効にする</string>
+    <string name="battery_optimization_title">バッテリー最適化を無効にする</string>
+    <string name="battery_optimization_description">確実に通知を転送するために、Ntfy Mirrorのバッテリー最適化を無効にすることをお勧めします。これにより、システムがバックグラウンドでアプリを終了するのを防ぎます。</string>
+    <string name="battery_optimization_icon">バッテリー最適化アイコン</string>
+    <string name="open_battery_settings">バッテリー最適化を無効にする</string>
+    <string name="skip">スキップ</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">コンテンツ非表示</string>
+</resources>

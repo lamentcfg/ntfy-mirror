@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy 镜像</string>
+    <string name="server_settings">服务器</string>
+    <string name="server_url">服务器地址</string>
+    <string name="topic">主题</string>
+    <string name="optional_credentials">凭据</string>
+    <string name="username">用户名（可选）</string>
+    <string name="password">密码（可选）</string>
+    <string name="test_connection">测试连接</string>
+    <string name="save">保存</string>
+    <string name="settings_saved">设置已保存</string>
+    <string name="connection_successful">连接成功</string>
+    <string name="connection_failed">连接失败：%s</string>
+    <string name="topic_required">主题为必填项</string>
+    <string name="server_url_required">服务器地址为必填项</string>
+    <string name="invalid_url">URL 格式无效</string>
+
+    <!-- App List -->
+    <string name="app_list">应用</string>
+    <string name="app_icon">应用图标</string>
+    <string name="apps_tab">应用</string>
+    <string name="system_tab">系统</string>
+    <string name="no_apps_found">未找到应用</string>
+    <string name="no_system_apps_found">未找到系统应用</string>
+    <string name="expand_collapse">展开或折叠</string>
+    <string name="no_channels">未发现频道</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d 个频道</item>
+        <item quantity="other">%1$d 个频道</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">频道</string>
+    <string name="no_channels_for_app">尚未发现频道。\n\n当此应用发送通知时，频道将显示在此处。</string>
+    <string name="select_all">全选</string>
+    <string name="deselect_all">取消全选</string>
+
+    <!-- Settings -->
+    <string name="settings">设置</string>
+    <string name="pref_forwarding_enabled_title">启用转发</string>
+    <string name="pref_forwarding_enabled_summary">将通知转发到 ntfy 服务器</string>
+    <string name="pref_forward_ongoing_title">转发持续通知</string>
+    <string name="pref_forward_ongoing_summary">包括持久/持续通知（例如音乐播放器、下载）</string>
+    <string name="pref_include_body_title">包含通知正文</string>
+    <string name="pref_include_body_summary">在转发的消息中包含完整的通知文本</string>
+    <string name="pref_about_category">关于</string>
+    <string name="pref_version_title">版本</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">捐赠</string>
+    <string name="pref_donate_summary">支持 Ntfy Mirror 的开发</string>
+    <string name="pref_source_code_title">源代码</string>
+    <string name="pref_source_code_summary">在 GitHub 上查看源代码</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">启用通知访问权限</string>
+    <string name="notification_permission_description">Ntfy Mirror 需要读取通知的权限，以便将其转发到您的 ntfy 服务器。</string>
+    <string name="notification_permission_instruction">点击下方按钮，然后在列表中找到"Ntfy Mirror"并启用它。</string>
+    <string name="notification_permission_icon">通知权限图标</string>
+    <string name="open_notification_settings">打开通知设置</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">电池优化</string>
+    <string name="pref_battery_optimization_summary">禁用电池优化以确保可靠的通知转发</string>
+    <string name="pref_battery_optimization_disabled">电池优化已禁用</string>
+    <string name="pref_battery_optimization_enabled">点击禁用电池优化</string>
+    <string name="battery_optimization_title">禁用电池优化</string>
+    <string name="battery_optimization_description">为了可靠的通知转发，我们建议为 Ntfy Mirror 禁用电池优化。这可以防止系统在后台关闭应用。</string>
+    <string name="battery_optimization_icon">电池优化图标</string>
+    <string name="open_battery_settings">禁用电池优化</string>
+    <string name="skip">跳过</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">内容已隐藏</string>
+</resources>

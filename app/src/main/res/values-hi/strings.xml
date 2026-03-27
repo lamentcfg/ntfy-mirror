@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy प्रतिरूप</string>
+    <string name="server_settings">सर्वर</string>
+    <string name="server_url">सर्वर URL</string>
+    <string name="topic">विषय</string>
+    <string name="optional_credentials">क्रेडेंशियल्स</string>
+    <string name="username">उपयोगकर्ता नाम (वैकल्पिक)</string>
+    <string name="password">पासवर्ड (वैकल्पिक)</string>
+    <string name="test_connection">कनेक्शन परीक्षण</string>
+    <string name="save">सहेजें</string>
+    <string name="settings_saved">सेटिंग्स सहेजी गईं</string>
+    <string name="connection_successful">कनेक्शन सफल</string>
+    <string name="connection_failed">कनेक्शन विफल: %s</string>
+    <string name="topic_required">विषय आवश्यक है</string>
+    <string name="server_url_required">सर्वर URL आवश्यक है</string>
+    <string name="invalid_url">अमान्य URL प्रारूप</string>
+
+    <!-- App List -->
+    <string name="app_list">ऐप्स</string>
+    <string name="app_icon">ऐप आइकन</string>
+    <string name="apps_tab">ऐप्स</string>
+    <string name="system_tab">सिस्टम</string>
+    <string name="no_apps_found">कोई ऐप नहीं मिला</string>
+    <string name="no_system_apps_found">कोई सिस्टम ऐप नहीं मिला</string>
+    <string name="expand_collapse">विस्तार या संक्षिप्त करें</string>
+    <string name="no_channels">कोई चैनल नहीं मिला</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d चैनल</item>
+        <item quantity="other">%1$d चैनल</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">चैनल</string>
+    <string name="no_channels_for_app">अभी तक कोई चैनल नहीं मिला।\n\nजब यह ऐप अधिसूचनाएं भेजेगा तो चैनल यहां दिखाई देंगे।</string>
+    <string name="select_all">सभी का चयन करें</string>
+    <string name="deselect_all">सभी को अचयनित करें</string>
+
+    <!-- Settings -->
+    <string name="settings">सेटिंग्स</string>
+    <string name="pref_forwarding_enabled_title">फ़ॉरवर्डिंग सक्षम करें</string>
+    <string name="pref_forwarding_enabled_summary">अधिसूचनाओं को ntfy सर्वर पर फ़ॉरवर्ड करें</string>
+    <string name="pref_forward_ongoing_title">चल रही अधिसूचनाएं फ़ॉरवर्ड करें</string>
+    <string name="pref_forward_ongoing_summary">स्थायी/चल रही अधिसूचनाएं शामिल करें (जैसे, संगीत प्लेयर, डाउनलोड)</string>
+    <string name="pref_include_body_title">अधिसूचना बॉडी शामिल करें</string>
+    <string name="pref_include_body_summary">फ़ॉरवर्ड किए गए संदेशों में पूर्ण अधिसूचना पाठ शामिल करें</string>
+    <string name="pref_about_category">के बारे में</string>
+    <string name="pref_version_title">संस्करण</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">दान करें</string>
+    <string name="pref_donate_summary">Ntfy Mirror के विकास का समर्थन करें</string>
+    <string name="pref_source_code_title">सोर्स कोड</string>
+    <string name="pref_source_code_summary">GitHub पर सोर्स कोड देखें</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">अधिसूचना पहुंच सक्षम करें</string>
+    <string name="notification_permission_description">Ntfy Mirror को आपकी अधिसूचनाओं को पढ़ने की अनुमति की आवश्यकता है ताकि यह उन्हें आपके ntfy सर्वर पर फ़ॉरवर्ड कर सके।</string>
+    <string name="notification_permission_instruction">नीचे दिए गए बटन पर टैप करें, फिर सूची में \"Ntfy Mirror\" खोजें और इसे सक्षम करें।</string>
+    <string name="notification_permission_icon">अधिसूचना अनुमति आइकन</string>
+    <string name="open_notification_settings">अधिसूचना सेटिंग्स खोलें</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">बैटरी अनुकूलन</string>
+    <string name="pref_battery_optimization_summary">विश्वसनीय अधिसूचना फ़ॉरवर्डिंग सुनिश्चित करने के लिए बैटरी अनुकूलन अक्षम करें</string>
+    <string name="pref_battery_optimization_disabled">बैटरी अनुकूलन अक्षम है</string>
+    <string name="pref_battery_optimization_enabled">बैटरी अनुकूलन अक्षम करने के लिए टैप करें</string>
+    <string name="battery_optimization_title">बैटरी अनुकूलन अक्षम करें</string>
+    <string name="battery_optimization_description">विश्वसनीय अधिसूचना फ़ॉरवर्डिंग के लिए, हम Ntfy Mirror के लिए बैटरी अनुकूलन अक्षम करने की सलाह देते हैं। यह सिस्टम को ऐप को बैकग्राउंड में बंद करने से रोकता है।</string>
+    <string name="battery_optimization_icon">बैटरी अनुकूलन आइकन</string>
+    <string name="open_battery_settings">बैटरी अनुकूलन अक्षम करें</string>
+    <string name="skip">छोड़ें</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">सामग्री छिपी हुई</string>
+</resources>

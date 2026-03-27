@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/serverSettingsFragment">
+
+    <fragment
+        android:id="@+id/serverSettingsFragment"
+        android:name="com.lamentcfg.ntfymirror.ui.ServerSettingsFragment"
+        android:label="@string/server_settings">
+        <action
+            android:id="@+id/action_serverSettingsFragment_to_appListFragment"
+            app:destination="@id/appListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/appListFragment"
+        android:name="com.lamentcfg.ntfymirror.ui.AppListFragment"
+        android:label="@string/app_list" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.lamentcfg.ntfymirror.ui.SettingsFragment"
+        android:label="@string/settings" />
+
+</navigation>

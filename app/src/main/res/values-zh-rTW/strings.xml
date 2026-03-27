@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy 鏡像</string>
+    <string name="server_settings">伺服器</string>
+    <string name="server_url">伺服器網址</string>
+    <string name="topic">主題</string>
+    <string name="optional_credentials">憑證</string>
+    <string name="username">使用者名稱（選用）</string>
+    <string name="password">密碼（選用）</string>
+    <string name="test_connection">測試連線</string>
+    <string name="save">儲存</string>
+    <string name="settings_saved">設定已儲存</string>
+    <string name="connection_successful">連線成功</string>
+    <string name="connection_failed">連線失敗：%s</string>
+    <string name="topic_required">主題為必填項目</string>
+    <string name="server_url_required">伺服器網址為必填項目</string>
+    <string name="invalid_url">網址格式無效</string>
+
+    <!-- App List -->
+    <string name="app_list">應用程式</string>
+    <string name="app_icon">應用程式圖示</string>
+    <string name="apps_tab">應用程式</string>
+    <string name="system_tab">系統</string>
+    <string name="no_apps_found">未找到應用程式</string>
+    <string name="no_system_apps_found">未找到系統應用程式</string>
+    <string name="expand_collapse">展開或摺疊</string>
+    <string name="no_channels">未發現頻道</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d 個頻道</item>
+        <item quantity="other">%1$d 個頻道</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">頻道</string>
+    <string name="no_channels_for_app">尚未發現頻道。\n\n當此應用程式發送通知時，頻道將顯示在此處。</string>
+    <string name="select_all">全選</string>
+    <string name="deselect_all">取消全選</string>
+
+    <!-- Settings -->
+    <string name="settings">設定</string>
+    <string name="pref_forwarding_enabled_title">啟用轉發</string>
+    <string name="pref_forwarding_enabled_summary">將通知轉發到 ntfy 伺服器</string>
+    <string name="pref_forward_ongoing_title">轉發持續性通知</string>
+    <string name="pref_forward_ongoing_summary">包含持續性通知（例如音樂播放器、下載）</string>
+    <string name="pref_include_body_title">包含通知內容</string>
+    <string name="pref_include_body_summary">在轉發的訊息中包含完整的通知文字</string>
+    <string name="pref_about_category">關於</string>
+    <string name="pref_version_title">版本</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">捐款</string>
+    <string name="pref_donate_summary">支援 Ntfy Mirror 的開發</string>
+    <string name="pref_source_code_title">原始碼</string>
+    <string name="pref_source_code_summary">在 GitHub 上查看原始碼</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">啟用通知存取權限</string>
+    <string name="notification_permission_description">Ntfy Mirror 需要讀取通知的權限，以便將其轉發到您的 ntfy 伺服器。</string>
+    <string name="notification_permission_instruction">點擊下方按鈕，然後在清單中找到「Ntfy Mirror」並啟用它。</string>
+    <string name="notification_permission_icon">通知權限圖示</string>
+    <string name="open_notification_settings">開啟通知設定</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">電池最佳化</string>
+    <string name="pref_battery_optimization_summary">停用電池最佳化以確保可靠的通知轉發</string>
+    <string name="pref_battery_optimization_disabled">電池最佳化已停用</string>
+    <string name="pref_battery_optimization_enabled">點擊停用電池最佳化</string>
+    <string name="battery_optimization_title">停用電池最佳化</string>
+    <string name="battery_optimization_description">為了可靠的通知轉發，我們建議為 Ntfy Mirror 停用電池最佳化。這可以防止系統在背景關閉應用程式。</string>
+    <string name="battery_optimization_icon">電池最佳化圖示</string>
+    <string name="open_battery_settings">停用電池最佳化</string>
+    <string name="skip">跳過</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">內容已隱藏</string>
+</resources>

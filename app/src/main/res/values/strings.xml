@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy Mirror</string>
+    <string name="server_settings">Server</string>
+    <string name="server_url">Server URL</string>
+    <string name="topic">Topic</string>
+    <string name="optional_credentials">Credentials</string>
+    <string name="username">Username (optional)</string>
+    <string name="password">Password (optional)</string>
+    <string name="test_connection">Test Connection</string>
+    <string name="save">Save</string>
+    <string name="settings_saved">Settings saved</string>
+    <string name="connection_successful">Connection successful</string>
+    <string name="connection_failed">Connection failed: %s</string>
+    <string name="topic_required">Topic is required</string>
+    <string name="server_url_required">Server URL is required</string>
+    <string name="invalid_url">Invalid URL format</string>
+
+    <!-- App List -->
+    <string name="app_list">Apps</string>
+    <string name="app_icon">App icon</string>
+    <string name="apps_tab">Apps</string>
+    <string name="system_tab">System</string>
+    <string name="no_apps_found">No apps found</string>
+    <string name="no_system_apps_found">No system apps found</string>
+    <string name="expand_collapse">Expand or collapse</string>
+    <string name="no_channels">No channels discovered</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d channel</item>
+        <item quantity="other">%1$d channels</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">Channels</string>
+    <string name="no_channels_for_app">No channels discovered yet.\n\nChannels will appear here when this app sends notifications.</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="pref_forwarding_enabled_title">Enable Forwarding</string>
+    <string name="pref_forwarding_enabled_summary">Forward notifications to ntfy server</string>
+    <string name="pref_forward_ongoing_title">Forward Ongoing Notifications</string>
+    <string name="pref_forward_ongoing_summary">Include persistent/ongoing notifications (e.g., music players, downloads)</string>
+    <string name="pref_include_body_title">Include Notification Body</string>
+    <string name="pref_include_body_summary">Include the full notification text in forwarded messages</string>
+    <string name="pref_battery_optimization_title">Battery Optimization</string>
+    <string name="pref_battery_optimization_summary">Disable battery optimization to ensure reliable notification forwarding</string>
+    <string name="pref_battery_optimization_disabled">Battery optimization is disabled</string>
+    <string name="pref_battery_optimization_enabled">Tap to disable battery optimization</string>
+    <string name="pref_about_category">About</string>
+    <string name="pref_version_title">Version</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">Donate</string>
+    <string name="pref_donate_summary">Support the development of Ntfy Mirror</string>
+    <string name="pref_source_code_title">Source Code</string>
+    <string name="pref_source_code_summary">View the source code on GitHub</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">Enable Notification Access</string>
+    <string name="notification_permission_description">Ntfy Mirror needs permission to read your notifications so it can forward them to your ntfy server.</string>
+    <string name="notification_permission_instruction">Tap the button below, then find \"Ntfy Mirror\" in the list and enable it.</string>
+    <string name="notification_permission_icon">Notification permission icon</string>
+    <string name="open_notification_settings">Open Notification Settings</string>
+
+    <!-- Battery Optimization -->
+    <string name="battery_optimization_title">Disable Battery Optimization</string>
+    <string name="battery_optimization_description">For reliable notification forwarding, we recommend disabling battery optimization for Ntfy Mirror. This prevents the system from killing the app in the background.</string>
+    <string name="battery_optimization_icon">Battery optimization icon</string>
+    <string name="open_battery_settings">Disable Battery Optimization</string>
+    <string name="skip">Skip</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">Content hidden</string>
+</resources>

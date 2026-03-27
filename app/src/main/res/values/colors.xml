@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Muted Teal with Graphite and Cream Accent Palette -->
+
+    <!-- Primary colors - Muted teal -->
+    <color name="teal_primary">#4A7C7C</color>
+    <color name="teal_primary_variant">#3A6363</color>
+    <color name="teal_on_primary">#FFFFFF</color>
+
+    <!-- Secondary colors - Soft teal -->
+    <color name="teal_secondary">#6B9E9E</color>
+    <color name="teal_secondary_variant">#5A8A8A</color>
+    <color name="teal_on_secondary">#1A1A1A</color>
+
+    <!-- Tertiary colors - Light teal -->
+    <color name="teal_tertiary">#8BB8B8</color>
+    <color name="teal_on_tertiary">#1A1A1A</color>
+
+    <!-- Accent colors - Cream -->
+    <color name="teal_accent">#F5F0E6</color>
+    <color name="teal_accent_light">#FAF8F3</color>
+
+    <!-- Background colors for light theme -->
+    <color name="background_light">#FAFAFA</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_variant_light">#F0F4F4</color>
+    <color name="surface_container_light">#F0F4F4</color>
+    <color name="surface_container_high_light">#E8EEEE</color>
+
+    <!-- Background colors for dark theme - Graphite -->
+    <color name="background_dark">#1E2224</color>
+    <color name="surface_dark">#282D2F</color>
+    <color name="surface_variant_dark">#33393B</color>
+    <color name="surface_container_dark">#33393B</color>
+    <color name="surface_container_high_dark">#3A4143</color>
+
+    <!-- Text colors -->
+    <color name="on_background_light">#1E2224</color>
+    <color name="on_surface_light">#1E2224</color>
+    <color name="on_surface_variant_light">#4A5A5A</color>
+
+    <color name="on_background_dark">#E8ECEC</color>
+    <color name="on_surface_dark">#E8ECEC</color>
+    <color name="on_surface_variant_dark">#A8B4B4</color>
+
+    <!-- Outline colors -->
+    <color name="outline_light">#C8D4D4</color>
+    <color name="outline_dark">#4A5A5A</color>
+
+    <!-- Error colors -->
+    <color name="error_light">#BA1A1A</color>
+    <color name="error_container_light">#FFDAD6</color>
+    <color name="error_dark">#FFB4AB</color>
+    <color name="error_container_dark">#93000A</color>
+
+    <!-- Card colors -->
+    <color name="card_light">#FFFFFF</color>
+    <color name="card_dark">#2E3436</color>
+
+    <!-- Input field colors -->
+    <color name="input_background_light">#F5F8F8</color>
+    <color name="input_background_dark">#1E2426</color>
+    <color name="input_stroke_light">#C8D4D4</color>
+    <color name="input_stroke_dark">#4A5A5A</color>
+    <color name="input_stroke_focused_light">#4A7C7C</color>
+    <color name="input_stroke_focused_dark">#6B9E9E</color>
+
+    <!-- Button colors -->
+    <color name="button_primary_light">#4A7C7C</color>
+    <color name="button_primary_dark">#6B9E9E</color>
+    <color name="button_secondary_light">#F5F0E6</color>
+    <color name="button_secondary_dark">#33393B</color>
+
+    <!-- Icon colors -->
+    <color name="icon_primary_light">#3A6363</color>
+    <color name="icon_primary_dark">#8BB8B8</color>
+
+    <!-- Divider -->
+    <color name="divider_light">#E8EEEE</color>
+    <color name="divider_dark">#3A4648</color>
+
+    <!-- Status bar -->
+    <color name="status_bar_light">#E8EEEE</color>
+    <color name="status_bar_dark">#0E1214</color>
+
+    <!-- Navigation bar - Graphite -->
+    <color name="nav_bar_light">#FAFAFA</color>
+    <color name="nav_bar_dark">#1E2224</color>
+
+    <!-- Ripple color -->
+    <color name="ripple_light">#1A4A7C4A</color>
+    <color name="ripple_dark">#1A8BB8B8</color>
+
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#faf0f0</color>
+
+    <!-- Switch colors - Light theme -->
+    <color name="switch_thumb_off_light">#F5F0E6</color> <!-- Cream -->
+    <color name="switch_track_off_light">#E8E0D4</color> <!-- Darker cream -->
+    <color name="switch_thumb_on_light">#4A7C7C</color> <!-- Teal -->
+    <color name="switch_track_on_light">#8BB8B8</color> <!-- Muted teal -->
+
+    <!-- Switch colors - Dark theme -->
+    <color name="switch_thumb_off_dark">#4A5A5A</color> <!-- Graphite -->
+    <color name="switch_track_off_dark">#33393B</color> <!-- Darker graphite -->
+    <color name="switch_thumb_on_dark">#6B9E9E</color> <!-- Teal -->
+    <color name="switch_track_on_dark">#3A6363</color> <!-- Muted teal -->
+</resources>

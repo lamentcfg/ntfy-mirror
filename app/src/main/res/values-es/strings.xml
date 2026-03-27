@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy Réplica</string>
+    <string name="server_settings">Servidor</string>
+    <string name="server_url">URL del Servidor</string>
+    <string name="topic">Tema</string>
+    <string name="optional_credentials">Credenciales</string>
+    <string name="username">Usuario (opcional)</string>
+    <string name="password">Contraseña (opcional)</string>
+    <string name="test_connection">Probar Conexión</string>
+    <string name="save">Guardar</string>
+    <string name="settings_saved">Configuración guardada</string>
+    <string name="connection_successful">Conexión exitosa</string>
+    <string name="connection_failed">Error de conexión: %s</string>
+    <string name="topic_required">El tema es obligatorio</string>
+    <string name="server_url_required">La URL del servidor es obligatoria</string>
+    <string name="invalid_url">Formato de URL inválido</string>
+
+    <!-- App List -->
+    <string name="app_list">Aplicaciones</string>
+    <string name="app_icon">Icono de la aplicación</string>
+    <string name="apps_tab">Aplicaciones</string>
+    <string name="system_tab">Sistema</string>
+    <string name="no_apps_found">No se encontraron aplicaciones</string>
+    <string name="no_system_apps_found">No se encontraron aplicaciones del sistema</string>
+    <string name="expand_collapse">Expandir o contraer</string>
+    <string name="no_channels">No se descubrieron canales</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d canal</item>
+        <item quantity="other">%1$d canales</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">Canales</string>
+    <string name="no_channels_for_app">No se han descubierto canales todavía.\n\nLos canales aparecerán aquí cuando esta aplicación envíe notificaciones.</string>
+    <string name="select_all">Seleccionar Todo</string>
+    <string name="deselect_all">Deseleccionar Todo</string>
+
+    <!-- Settings -->
+    <string name="settings">Ajustes</string>
+    <string name="pref_forwarding_enabled_title">Habilitar Reenvío</string>
+    <string name="pref_forwarding_enabled_summary">Reenviar notificaciones al servidor ntfy</string>
+    <string name="pref_forward_ongoing_title">Reenviar Notificaciones Continuas</string>
+    <string name="pref_forward_ongoing_summary">Incluir notificaciones persistentes/continuas (ej. reproductores de música, descargas)</string>
+    <string name="pref_include_body_title">Incluir Cuerpo de la Notificación</string>
+    <string name="pref_include_body_summary">Incluir el texto completo de la notificación en los mensajes reenviados</string>
+    <string name="pref_about_category">Acerca de</string>
+    <string name="pref_version_title">Versión</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">Donar</string>
+    <string name="pref_donate_summary">Apoyar el desarrollo de Ntfy Mirror</string>
+    <string name="pref_source_code_title">Código Fuente</string>
+    <string name="pref_source_code_summary">Ver el código fuente en GitHub</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">Habilitar Acceso a Notificaciones</string>
+    <string name="notification_permission_description">Ntfy Mirror necesita permiso para leer tus notificaciones para poder reenviarlas a tu servidor ntfy.</string>
+    <string name="notification_permission_instruction">Toca el botón de abajo, luego busca \"Ntfy Mirror\" en la lista y actívalo.</string>
+    <string name="notification_permission_icon">Icono de permiso de notificación</string>
+    <string name="open_notification_settings">Abrir Configuración de Notificaciones</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">Optimización de Batería</string>
+    <string name="pref_battery_optimization_summary">Desactivar optimización de batería para asegurar reenvío confiable de notificaciones</string>
+    <string name="pref_battery_optimization_disabled">Optimización de batería desactivada</string>
+    <string name="pref_battery_optimization_enabled">Toca para desactivar optimización de batería</string>
+    <string name="battery_optimization_title">Desactivar Optimización de Batería</string>
+    <string name="battery_optimization_description">Para un reenvío confiable de notificaciones, recomendamos desactivar la optimización de batería para Ntfy Mirror. Esto evita que el sistema cierre la aplicación en segundo plano.</string>
+    <string name="battery_optimization_icon">Icono de optimización de batería</string>
+    <string name="open_battery_settings">Desactivar Optimización de Batería</string>
+    <string name="skip">Omitir</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">Contenido oculto</string>
+</resources>

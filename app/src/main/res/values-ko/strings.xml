@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ntfy 복제본</string>
+    <string name="server_settings">서버</string>
+    <string name="server_url">서버 URL</string>
+    <string name="topic">토픽</string>
+    <string name="optional_credentials">인증 정보</string>
+    <string name="username">사용자 이름 (선택)</string>
+    <string name="password">비밀번호 (선택)</string>
+    <string name="test_connection">연결 테스트</string>
+    <string name="save">저장</string>
+    <string name="settings_saved">설정이 저장되었습니다</string>
+    <string name="connection_successful">연결 성공</string>
+    <string name="connection_failed">연결 실패: %s</string>
+    <string name="topic_required">토픽은 필수 항목입니다</string>
+    <string name="server_url_required">서버 URL은 필수 항목입니다</string>
+    <string name="invalid_url">잘못된 URL 형식입니다</string>
+
+    <!-- App List -->
+    <string name="app_list">앱</string>
+    <string name="app_icon">앱 아이콘</string>
+    <string name="apps_tab">앱</string>
+    <string name="system_tab">시스템</string>
+    <string name="no_apps_found">앱을 찾을 수 없습니다</string>
+    <string name="no_system_apps_found">시스템 앱을 찾을 수 없습니다</string>
+    <string name="expand_collapse">확장 또는 축소</string>
+    <string name="no_channels">채널 없음</string>
+
+    <plurals name="channel_count_plural">
+        <item quantity="one">%1$d 채널</item>
+        <item quantity="other">%1$d 채널</item>
+    </plurals>
+
+    <!-- Channel List -->
+    <string name="channel_list">채널</string>
+    <string name="no_channels_for_app">아직 발견된 채널이 없습니다.\n\n이 앱이 알림을 보내면 채널이 여기에 나타납니다.</string>
+    <string name="select_all">모두 선택</string>
+    <string name="deselect_all">모두 선택 해제</string>
+
+    <!-- Settings -->
+    <string name="settings">설정</string>
+    <string name="pref_forwarding_enabled_title">전달 활성화</string>
+    <string name="pref_forwarding_enabled_summary">알림을 ntfy 서버로 전달</string>
+    <string name="pref_forward_ongoing_title">진행 중인 알림 전달</string>
+    <string name="pref_forward_ongoing_summary">지속적/진행 중인 알림 포함 (예: 음악 플레이어, 다운로드)</string>
+    <string name="pref_include_body_title">알림 본문 포함</string>
+    <string name="pref_include_body_summary">전달된 메시지에 전체 알림 텍스트 포함</string>
+    <string name="pref_about_category">정보</string>
+    <string name="pref_version_title">버전</string>
+    <string name="pref_version_summary">%1$s</string>
+    <string name="pref_donate_title">기부</string>
+    <string name="pref_donate_summary">Ntfy Mirror 개발 지원</string>
+    <string name="pref_source_code_title">소스 코드</string>
+    <string name="pref_source_code_summary">GitHub에서 소스 코드 보기</string>
+
+    <!-- Notification Permission -->
+    <string name="notification_permission_title">알림 접근 활성화</string>
+    <string name="notification_permission_description">Ntfy Mirror가 알림을 ntfy 서버로 전달하려면 알림을 읽을 수 있는 권한이 필요합니다.</string>
+    <string name="notification_permission_instruction">아래 버튼을 누른 다음 목록에서 \"Ntfy Mirror\"를 찾아 활성화하세요.</string>
+    <string name="notification_permission_icon">알림 권한 아이콘</string>
+    <string name="open_notification_settings">알림 설정 열기</string>
+
+    <!-- Battery Optimization -->
+    <string name="pref_battery_optimization_title">배터리 최적화</string>
+    <string name="pref_battery_optimization_summary">안정적인 알림 전달을 위해 배터리 최적화 비활성화</string>
+    <string name="pref_battery_optimization_disabled">배터리 최적화가 비활성화되었습니다</string>
+    <string name="pref_battery_optimization_enabled">탭하여 배터리 최적화 비활성화</string>
+    <string name="battery_optimization_title">배터리 최적화 비활성화</string>
+    <string name="battery_optimization_description">안정적인 알림 전달을 위해 Ntfy Mirror의 배터리 최적화를 비활성화하는 것을 권장합니다. 이렇게 하면 시스템이 백그라운드에서 앱을 종료하는 것을 방지할 수 있습니다.</string>
+    <string name="battery_optimization_icon">배터리 최적화 아이콘</string>
+    <string name="open_battery_settings">배터리 최적화 비활성화</string>
+    <string name="skip">건너뛰기</string>
+
+    <!-- Notification Content -->
+    <string name="content_hidden">내용 숨김</string>
+</resources>
