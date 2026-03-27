@@ -26,7 +26,7 @@ Builds:
     gradle:
       - yes
 
-AllowedAPKSigningKeys: REPLACE_WITH_YOUR_SIGNING_KEY_FINGERPRINT
+AllowedAPKSigningKeys: 755B3C77678F558A35681C626DD35D39949AD14B91F36D904709E5586F25FEFE
 
 AutoUpdateMode: Version
 UpdateCheckMode: Tags
