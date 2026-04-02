@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.service.notification.NotificationListenerService
 import android.service.notification.StatusBarNotification
 import android.util.Log
+import com.lamentcfg.ntfymirror.BuildConfig
 import com.lamentcfg.ntfymirror.data.ChannelDiscoveryManager
 import com.lamentcfg.ntfymirror.data.SettingsRepository
 import com.lamentcfg.ntfymirror.network.NtfyClient
@@ -93,14 +94,18 @@ class NtfyNotificationListenerService : NotificationListenerService() {
 
         // Skip duplicate notifications by content (doze replays, network reconnection replays)
         if (isDuplicate(notificationPackageName, title, text)) {
-            Log.d(TAG, "Skipping duplicate notification: package=$notificationPackageName, title=$title")
+            if (BuildConfig.DEBUG) {
+                Log.d(TAG, "Skipping duplicate notification: package=$notificationPackageName, title=$title")
+            }
             return
         }
 
-        Log.d(
-            TAG, "Notification posted: package=$notificationPackageName, " +
-                    "title=$title, channel=$channelId, ongoing=$isOngoing"
-        )
+        if (BuildConfig.DEBUG) {
+            Log.d(
+                TAG, "Notification posted: package=$notificationPackageName, " +
+                        "title=$title, channel=$channelId, ongoing=$isOngoing"
+            )
+        }
 
         // Check if forwarding should proceed
         if (!shouldForwardNotification(notificationPackageName, channelId, isOngoing)) {
@@ -198,7 +203,7 @@ class NtfyNotificationListenerService : NotificationListenerService() {
 
             repeat(MAX_RETRY_ATTEMPTS) { attempt ->
                 if (attempt > 0) {
-                    Log.d(TAG, "Retry attempt $attempt for notification: $title")
+                    Log.d(TAG, "Retry attempt $attempt for notification: ${if (BuildConfig.DEBUG) title else ""}")
                     delay(RETRY_DELAY_MS * attempt)
                 }
 
@@ -213,7 +218,7 @@ class NtfyNotificationListenerService : NotificationListenerService() {
 
                 result.fold(
                     onSuccess = {
-                        Log.d(TAG, "Successfully forwarded notification: $title")
+                        Log.d(TAG, "Successfully forwarded notification: ${if (BuildConfig.DEBUG) title else ""}")
                         return@launch
                     },
                     onFailure = { error ->

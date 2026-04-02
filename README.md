@@ -13,17 +13,9 @@
 
 <br>
 
-<a href="https://apt.izzysoft.de/fdroid/index/apk/com.lamentcfg.ntfymirror">
-<img src="docs/badges/izzyondroid.png"
-alt="Get it on IzzyOnDroid" height="80" /></a>
-
 <a href="https://apps.obtainium.imranr.dev/redirect.html?r=obtainium://add/https://github.com/lamentcfg/ntfy-mirror">
 <img src="docs/badges/obtainium.png"
 alt="Get it on Obtainium" height="80" /></a>
-
-<a href="https://f-droid.org/packages/com.lamentcfg.ntfymirror">
-<img src="docs/badges/fdroid.png"
-alt="Get it on F-Droid" height="80" /></a>
 
 </div>
 
@@ -69,12 +61,6 @@ The APK will be available at `app/build/outputs/apk/`
 ## Contributing
 
 This project does not accept pull requests. However, feature requests and bug reports are welcome! Please open an issue for any suggestions or problems you encounter.
-
-## Donate
-
-If you find this project helpful, consider supporting its development:
-
-[Donate here](https://lamentcfg.com/donate)
 
 ## License
 
